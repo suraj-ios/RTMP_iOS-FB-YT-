@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HaishinKitRTMP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N2G-Yc-RJW" customClass="MTHKView" customModule="HaishinKit">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbH-er-z3x">
+                                        <rect key="frame" x="168.5" y="430" width="77" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="GO LIVE">
+                                            <color key="titleColor" systemColor="systemRedColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onPublish:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b5F-Jt-zPG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="JbH-er-z3x" firstAttribute="centerX" secondItem="N2G-Yc-RJW" secondAttribute="centerX" id="U94-Re-Bt2"/>
+                                    <constraint firstItem="JbH-er-z3x" firstAttribute="centerY" secondItem="N2G-Yc-RJW" secondAttribute="centerY" id="rDB-wm-Zsj"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_launchScreenLogo" translatesAutoresizingMaskIntoConstraints="NO" id="l5m-nk-V43">
+                                <rect key="frame" x="189.5" y="362.5" width="35" height="35"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="A0i-6z-y9E"/>
+                                    <constraint firstAttribute="height" constant="35" id="A8j-h5-WUe"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="N2G-Yc-RJW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5SU-Nk-t7E"/>
+                            <constraint firstAttribute="bottom" secondItem="N2G-Yc-RJW" secondAttribute="bottom" id="CdX-pD-L0k"/>
+                            <constraint firstItem="l5m-nk-V43" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-68" id="H3a-Pi-7z0"/>
+                            <constraint firstItem="N2G-Yc-RJW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ouo-G5-TtY"/>
+                            <constraint firstItem="l5m-nk-V43" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qDZ-9W-H3H"/>
+                            <constraint firstItem="N2G-Yc-RJW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wbx-ac-0Qh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lfView" destination="N2G-Yc-RJW" id="UvQ-sz-IC5"/>
+                        <outlet property="liveIconView" destination="l5m-nk-V43" id="a0J-TX-1vR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="63.616071428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_launchScreenLogo" width="341" height="341"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

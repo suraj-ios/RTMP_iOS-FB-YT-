@@ -1,0 +1,6 @@
+framework module Pods_HaishinKitRTMP {
+  umbrella header "Pods-HaishinKitRTMP-umbrella.h"
+
+  export *
+  module * { export * }
+}
